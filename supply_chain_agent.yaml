@@ -45,7 +45,7 @@ tasks:
 
   - id: push_to_vercel
     type: io.kestra.plugin.core.http.Request
-    uri: "https://your-vercel-project-name.vercel.app/api/update-risk"
+    uri: "https://https://pulse-guardian.vercel.app/api/update-risk"
     method: POST
     contentType: "application/json"
     body: "{{ outputs.gemini_analysis.choices[0].message.content }}"
