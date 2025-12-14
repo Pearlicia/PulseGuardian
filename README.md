@@ -1,3 +1,19 @@
+# Agent Name: "The Sentinel: Intelligent Supply Chain Guardian"
+
+## The Real-World Problem:
+
+Small businesses struggle to track competitor pricing and supply chain disruptions (news, weather, strikes) because they can't afford expensive analysts.
+
+## What Sentinel Agent does:
+
+**Monitors:** The Agent (Kestra) runs every morning.
+
+**Scrapes:** It fetches product prices from 3 competitor websites and "supply chain news" from RSS feeds.
+
+**Reasons (Gemini):** It uses Google Gemini to summarize the news ("Is there a disruption risk?") and compare prices.
+
+**Acts:** If a risk is high, it auto-drafts an email to suppliers. Finally, it pushes a daily report to a public Vercel dashboard.
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
